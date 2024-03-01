@@ -36,6 +36,9 @@ p {
   .str {
     margin-right: 40px;
   }
+  .flyt {
+    margin-left: 50px;
+  }
 }
 
 h3 {
@@ -222,7 +225,8 @@ a {
   .accordion-item.active .accordion-header {
     border-left: 1px solid var(--baggrund);
   }
-  .container_højretekst {
+  .container_højretekst,
+  .container_venstretekst {
     display: flex;
     overflow: hidden;
   }
