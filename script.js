@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
+/////////////////// CURSOR ////////////////////////
 document.addEventListener("mousemove", (e) => {
   const cursor = document.getElementById("custom-cursor");
   cursor.style.left = `${e.clientX}px`;
