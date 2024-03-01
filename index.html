@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personlig Professionel Profil</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Babylonica&family=Corinthia:wght@400;700&family=Cutive+Mono&family=Ephesis&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inconsolata&family=Island+Moments&family=Kalam&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@600&family=Open+Sans&family=Orbitron&family=Permanent+Marker&family=Rajdhani&family=Rye&family=Sora&family=Sriracha&family=Tulpen+One&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            cursor: none;
+        }
+
+
+        #logo {
+            width: 12%;
+            opacity: 1;
+            transition: opacity 1s ease-out;
+            z-index: 1;
+            position: absolute;
+            padding-top: 200px;
+        }
+
+        .container {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+        }
+
+        @media (min-width: 800px) {
+            #logo {
+                width: 7%;
+                padding-top: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="logo">
+        <img src="cvj_logo.svg" alt="logo">
+    </div>
+    <div class="container">
+        <img class="baggrundsb" src="art_bagg.png" alt="baggrundsbillede">
+        <section class="container_højretekst">
+            <div class="whitespace"></div>
+            <div>
+                <h2>OM MIG</h2>
+                <p class="str">Mit navn er Caroline Vestergaard-Jensen, jeg er 23 år og er under uddannelse på <a
+                        href="https://www.kea.dk">KEA</a> som multimediedesigner. Jeg har passion for digital
+                    design
+                    og frontend. Som person er jeg utrolig
+                    detaljeorienteret, hjælpsom og kan arbejde selvstændigt samt i teamwork.</p>
+            </div>
+        </section>
+        <section>
+            <div class="accordion">
+                <img class="komp_img" src="komp.text.svg" alt="kompetencer tekst">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h2 class="accordion_text">Design</h2>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Jeg har altid elsket at tegne, designe, male og generelt være kreativ siden jeg var barn. I
+                            løbet af min uddannelse har
+                            jeg fået erfaring med følgende:</p>
+                        <br>
+                        <ul>
+                            <li>Figma</li>
+                            <li>Adobe Xd</li>
+                            <li>UX/UI design</li>
+                            <li>Mock-up, styletile og designguide</li>
+                            <li>Skitsering</li>
+                        </ul>
+                        <br><br>
+                        <div class="flex1_1">
+                            <a href="https://www.figma.com/file/xXv1gnhRyrP25O0W42e9sP/Design?type=design&node-id=2-2874&mode=design&t=KiQAjdDtF3X6boLi-0"
+                                target="_blank"><img class="figma_icon" src="figma.svg" alt="figma_icon"></a>
+                            <p>Se eksempel på design i figma - gruppe eksamen</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h2 class="accordion_text">Illustrationer</h2>
+                    </div>
+                    <div class="accordion-content">
+                        <p>I løbet af min uddannelse har jeg lavet illustrationer herunder logoer. <br><br>Disse
+                            illustrationer
+                            er udarbejdet i:</p>
+                        <br>
+                        <ul>
+                            <li>Adobe Ai</li>
+                        </ul>
+                        <br>
+                        <div class="flex1_1">
+                            <a href="https://www.figma.com/file/fFFs8W3RXDlhLKE90SaxPp/illustrationer?type=design&node-id=0%3A1&mode=design&t=bHPzekzofSO8rT9D-1"
+                                target="_blank"><img class="link_icon" src="Link.svg" alt="link_icon"></a>
+                            <p>Se eksempler på illustrationer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h2 class="accordion_text">Kodening</h2>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Jeg har valgfaget Frontend og har dermed erfaring med følgende:</p>
+                        <br>
+                        <ul>
+                            <li>Html og CSS</li>
+                            <li>Javascript</li>
+                            <li>Astro</li>
+                            <li>Github</li>
+                        </ul>
+                        <br>
+                        <p>Når jeg er færdig på valgfaget, har jeg også erfaring med:</p>
+                        <br>
+                        <ul>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h2 class="accordion_text">Videoredigering &amp; fotografering</h2>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Jeg har stor interesse inden for fotografering og videoredigering. <br><br>Jeg har erfaring
+                            med at
+                            arbejde i følgende Adobe programmer:</p>
+                        <br>
+                        <ul>
+                            <li>Adobe Premiere Pro</li>
+                            <li>Adobe Lightroom</li>
+                        </ul>
+                        <br><br>
+                        <div class="flex1_1">
+                            <a href="https://www.youtube.com/watch?v=1pHANhtB6Wg&list=PLGAGkX7WvIoDz2Ut6h2qeofsHxA_m6kwz"
+                                target="_blank"><img class="link_icon" src="Link.svg" alt="link_icon"></a>
+                            <p>Stemningsvideo af Thank You Tattoo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Praktikplads</h2>
+        </section>
+        <img class="linje" src="linje.svg" alt="linje">
+        <footer>
+            <h3>KONTAKT</h3>
+            <div class="footer">
+                <div class="flex1_1">
+                    <img class="Phone_icon" src="Phone.svg" alt="Phone_icon">
+                    <p>+ 45 40 10 68 06</p>
+                </div>
+                <div class="flex1_1">
+                    <img class="mail_icon" src="Mail.svg" alt="mail_icon">
+                    <p>vestergaardjensenc@gmail.com</p>
+                </div>
+                <div class="flex1_1">
+                    <a href="https://www.linkedin.com/in/caroline-vestergaard-jensen-0990652b7/"><img
+                            class="linkedin_icon" src="Linkedin.svg" alt="linkedin_icon"></a>
+                    <p>Linkedin profil</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="custom-cursor"></div>
+</body>
+
+</html>
+
+<script src=" script.js"></script>

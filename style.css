@@ -1,0 +1,249 @@
+body {
+  max-width: 1444px;
+  margin: 0 auto;
+  background-color: var(--baggrund);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+:root {
+  --blå: #07213f;
+  --brun: #5f4325;
+  --lyserød: #c48aac;
+  --baggrund: #fffdf3;
+  --font: "Hanken Grotesk", sans-serif;
+}
+
+p {
+  font-family: var(--font);
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--brun);
+}
+.str {
+  font-size: 1.2rem;
+}
+@media (min-width: 800px) {
+  .str {
+    margin-right: 40px;
+  }
+}
+
+h3 {
+  font-family: var(--font);
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--brun);
+  text-align: center;
+  letter-spacing: 2px;
+}
+h2 {
+  font-family: var(--font);
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: bold;
+  letter-spacing: 2px;
+}
+section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+ul {
+  color: var(--blå);
+  font-family: var(--font);
+  margin-left: 20px;
+}
+a {
+  color: var(--blå);
+  cursor: none;
+}
+
+/*-------- Baggrundsbillede --------*/
+
+.baggrundsb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+@media (min-width: 800px) {
+  .baggrundsb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*---------Footer---------*/
+@media (min-width: 800px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    padding: 50px;
+  }
+}
+.mail_icon {
+  width: fit-content;
+}
+.Phone_icon {
+  width: fit-content;
+}
+.linkedin_icon {
+  width: fit-content;
+  padding-top: 2px;
+}
+.flex1_1 {
+  display: flex;
+  gap: 10px;
+  padding: 7px;
+}
+.footer {
+  padding: 25px;
+}
+
+/*---------- harmonika ----------*/
+
+.accordion-item {
+  background-color: var(--baggrund);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-header {
+  padding: 10px;
+  background-color: var(--baggrund);
+  color: var(--blå);
+  border: 1px solid var(--blå);
+  cursor: none;
+}
+
+.accordion-content {
+  padding: 10px;
+  padding-top: 13px;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.accordion-content.show {
+  display: block;
+  border: 1px solid var(--blå);
+  opacity: 1;
+  animation: accordionOpen 0.5s ease-out;
+}
+@keyframes accordionOpen {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 300px;
+  }
+}
+
+.accordion_text {
+  padding: 15px;
+}
+
+.komp_img {
+  width: 70%;
+  margin: 10px;
+}
+.accordion-header:hover,
+.accordion-item.active .accordion-header {
+  background-color: var(--blå);
+  color: var(--baggrund);
+}
+
+.figma_icon {
+  width: fit-content;
+  padding-top: 2px;
+}
+.link_icon {
+  width: fit-content;
+  padding-top: 2px;
+}
+@media (min-width: 900px) {
+  .accordion-item {
+    flex-direction: row;
+  }
+  .accordion {
+    display: flex;
+    height: 500px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .accordion_text {
+    transform-origin: left;
+    top: 1rem;
+    rotate: 90deg;
+    width: max-content;
+    left: 55px;
+    position: relative;
+    padding: 0;
+  }
+  .komp_img {
+    width: 30%;
+    display: flex;
+    align-self: flex-start;
+    margin-right: 30px;
+  }
+  .accordion-content.show {
+    width: 300px;
+    animation: accordionOpen 0.5s ease-out;
+  }
+  @keyframes accordionOpen {
+    from {
+      max-width: 0;
+    }
+    to {
+      max-width: 300px;
+    }
+  }
+  .accordion-header {
+    width: 115px;
+  }
+  .accordion-header:hover,
+  .accordion-item.active .accordion-header {
+    border-left: 1px solid var(--baggrund);
+  }
+  .container_højretekst {
+    display: flex;
+    overflow: hidden;
+  }
+  .whitespace {
+    flex-grow: 1;
+    width: 150%;
+  }
+}
+
+.linje {
+  margin-bottom: 25px;
+}
+/*---------cursor---------*/
+#custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transform: translate(-50%, -50%); /* Center the cursor on the mouse position */
+  display: inline-table;
+  transition: background-color 0.3s;
+}
