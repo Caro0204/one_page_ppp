@@ -107,7 +107,6 @@ a {
 }
 .linkedin_icon {
   width: fit-content;
-  padding-top: 2px;
 }
 .flex1_1 {
   display: flex;
@@ -116,6 +115,16 @@ a {
 }
 .footer {
   padding: 25px;
+}
+.link {
+  display: flex;
+  gap: 10px;
+  font-family: var(--font);
+  text-decoration: none;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--brun);
 }
 
 /*---------- harmonika ----------*/
