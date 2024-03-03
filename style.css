@@ -17,6 +17,7 @@ img {
 :root {
   --blå: #07213f;
   --brun: #5f4325;
+  --lysebrun: #935f2f;
   --lyserød: #c48aac;
   --baggrund: #fffdf3;
   --font: "Hanken Grotesk", sans-serif;
@@ -90,15 +91,14 @@ a {
 }
 
 /*---------Footer---------*/
-@media (min-width: 800px) {
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 75px;
-    padding: 50px;
-  }
-}
+/* .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+  padding: 50px;
+} */
+
 .mail_icon {
   width: fit-content;
 }
@@ -116,15 +116,87 @@ a {
 .footer {
   padding: 25px;
 }
-.link {
-  display: flex;
-  gap: 10px;
-  font-family: var(--font);
-  text-decoration: none;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  color: var(--brun);
+.padding {
+  padding: 7px;
+}
+@media (min-width: 800px) {
+  .hide_desktop {
+    display: none;
+  }
+}
+
+/*--------- iconer ----------*/
+.hide_mobile {
+  display: none;
+}
+@media (min-width: 800px) {
+  .iconer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    gap: 10px;
+  }
+
+  .icon {
+    border-radius: 50%;
+    border: 1px solid var(--brun);
+    padding: 15px;
+    width: 6%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link {
+    display: flex;
+    gap: 10px;
+    font-family: var(--font);
+    text-decoration: none;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--brun);
+  }
+
+  .text {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    animation: slideIn 0.5s ease-out;
+  }
+  .text_show {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-150%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  /* .icon:hover {
+    background-color: var(--blå);
+  }
+  .Phone_icon:hover {
+    background-color: var(--blå);
+    content: url(/svg_webp/Phone-hvid.svg);
+  }
+
+  .linkedin_icon:hover {
+    background-color: var(--blå);
+    content: url(/svg_webp/Linkedin-hvid.svg);
+  } */
+  .mail_icon {
+    width: auto;
+  }
+  .Phone_icon {
+    width: auto;
+  }
+  .linkedin_icon {
+    width: auto;
+  }
 }
 
 /*---------- harmonika ----------*/
@@ -158,6 +230,16 @@ a {
   opacity: 1;
   animation: accordionOpen 0.5s ease-out;
 }
+.link {
+  display: flex;
+  gap: 10px;
+  font-family: var(--font);
+  text-decoration: none;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--brun);
+}
 @keyframes accordionOpen {
   from {
     max-height: 0;
@@ -180,15 +262,16 @@ a {
   background-color: var(--blå);
   color: var(--baggrund);
 }
-
 .figma_icon {
-  width: fit-content;
   padding-top: 2px;
+  width: fit-content;
 }
+
 .link_icon {
-  width: fit-content;
   padding-top: 2px;
+  width: fit-content;
 }
+
 @media (min-width: 900px) {
   .accordion-item {
     flex-direction: row;
@@ -240,7 +323,6 @@ a {
     overflow: hidden;
   }
   .whitespace {
-    flex-grow: 1;
     width: 150%;
   }
 }
@@ -249,14 +331,16 @@ a {
   margin-bottom: 25px;
 }
 /*---------cursor---------*/
-#custom-cursor {
-  position: fixed;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  mix-blend-mode: difference;
-  pointer-events: none;
-  transform: translate(-50%, -50%); /* Center the cursor on the mouse position */
-  display: inline-table;
-  transition: background-color 0.3s;
+@media (min-width: 800px) {
+  #custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translate(-50%, -50%); /* Center the cursor on the mouse position */
+    display: inline-table;
+    transition: background-color 0.3s;
+  }
 }

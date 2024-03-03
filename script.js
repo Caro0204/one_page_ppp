@@ -47,3 +47,16 @@ document.addEventListener("mousemove", (e) => {
   const isOverLink = e.target.tagName.toLowerCase() === "a";
   cursor.style.backgroundColor = isOverLink ? "#8e6d59" : "#c9b6a5";
 });
+
+///////////////// ICONER /////////////////////
+function toggleText(type) {
+  var textElements = document.querySelectorAll(".text");
+  textElements.forEach(function (textElement) {
+    textElement.style.display = "none";
+  });
+
+  var targetText = document.querySelector("." + type + "-text");
+  if (targetText) {
+    targetText.style.display = "block";
+  }
+}
