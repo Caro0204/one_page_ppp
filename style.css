@@ -290,11 +290,7 @@ a {
 .accordion-header:hover,
 .accordion-item.active .accordion-header {
   color: var(--baggrund);
-  background-image: url(/svg_webp/art_bb.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  object-fit: cover;
+  background: #2c1d17;
 }
 
 .figma_icon {
@@ -359,6 +355,15 @@ a {
   }
   .whitespace {
     width: 150%;
+  }
+  .accordion-header:hover,
+  .accordion-item.active .accordion-header {
+    color: var(--baggrund);
+    background-image: url(/svg_webp/art_bb.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
   }
 }
 
