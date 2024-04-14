@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   var logo = document.getElementById("logo");
   var container = document.querySelector(".container");
+  var menu = document.querySelector(".menu");
 
   // Delay the fade-out effect on the logo
   setTimeout(function () {
@@ -12,6 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     container.style.opacity = 1;
   }, 1500);
+
+  setTimeout(function () {
+    menu.style.opacity = 1;
+  }, 2000);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -45,7 +50,7 @@ document.addEventListener("mousemove", (e) => {
 
   // Check if the cursor is over a link
   const isOverLink = e.target.tagName.toLowerCase() === "a";
-  cursor.style.backgroundColor = isOverLink ? "#8e6d59" : "#c9b6a5";
+  cursor.style.backgroundColor = isOverLink ? "#919c9d" : "#a6b1bb";
 });
 
 ///////////////// ICONER /////////////////////

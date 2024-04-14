@@ -16,10 +16,19 @@ img {
 }
 :root {
   --blå: #07213f;
+  --lyseblå: #a6b1bb;
   --brun: #5f4325;
   --lysebrun: #935f2f;
   --lyserød: #c48aac;
   --baggrund: #fffdf3;
+  --mørkegrå: #2b2b2b;
+  /* nye farver */
+  --white: #ebe5dc;
+  --blue: #919c9d;
+  --green: #868365;
+  --black: #24221e;
+  --brown: #2c1d17;
+
   --font: "Hanken Grotesk", sans-serif;
 }
 
@@ -28,14 +37,14 @@ p {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  color: var(--brun);
+  color: var(--mørkegrå);
 }
 .str {
   font-size: 1.2rem;
 }
 @media (min-width: 800px) {
   .str {
-    margin-right: 40px;
+    margin-right: 90px;
   }
   .flyt {
     margin-left: 50px;
@@ -47,7 +56,7 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  color: var(--brun);
+  color: var(--black);
   text-align: center;
   letter-spacing: 2px;
 }
@@ -67,10 +76,17 @@ section {
 ul {
   color: var(--blå);
   font-family: var(--font);
-  margin-left: 20px;
+  margin-left: 30px;
+}
+
+li {
+  padding-left: 5px;
+  padding-bottom: 2.5px;
+  color: var(--black);
+  font-style: bold;
 }
 a {
-  color: var(--blå);
+  color: var(--black);
   cursor: none;
 }
 
@@ -87,9 +103,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin-left: 50px;
   }
 }
 
+.grid1_3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 /*---------Footer---------*/
 /* .footer {
   display: flex;
@@ -134,16 +156,22 @@ a {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
+    margin-top: 20px;
     gap: 10px;
   }
 
   .icon {
     border-radius: 50%;
-    border: 1px solid var(--brun);
-    padding: 15px;
-    width: 6%;
+    border: 2px solid var(--brown);
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    background-color: var(--brown);
+  }
+
+  .icon:hover {
+    border-radius: 50%;
+    border: 2.2px solid var(--baggrund);
   }
 
   .link {
@@ -152,9 +180,9 @@ a {
     font-family: var(--font);
     text-decoration: none;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 800;
     font-style: normal;
-    color: var(--brun);
+    color: var(--mørkegrå);
   }
 
   .text {
@@ -211,14 +239,14 @@ a {
 .accordion-header {
   padding: 10px;
   background-color: var(--baggrund);
-  color: var(--blå);
-  border: 1px solid var(--blå);
+  color: var(--mørkegrå);
+  border: 1px solid var(--mørkegrå);
   cursor: none;
 }
 
 .accordion-content {
-  padding: 10px;
-  padding-top: 13px;
+  padding: 17px;
+  padding-top: 20px;
   display: none;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
@@ -226,7 +254,7 @@ a {
 
 .accordion-content.show {
   display: block;
-  border: 1px solid var(--blå);
+  border: 1px solid var(--mørkegrå);
   opacity: 1;
   animation: accordionOpen 0.5s ease-out;
 }
@@ -238,7 +266,7 @@ a {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  color: var(--brun);
+  color: var(--black);
 }
 @keyframes accordionOpen {
   from {
@@ -251,6 +279,8 @@ a {
 
 .accordion_text {
   padding: 15px;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
 }
 
 .komp_img {
@@ -259,9 +289,14 @@ a {
 }
 .accordion-header:hover,
 .accordion-item.active .accordion-header {
-  background-color: var(--blå);
   color: var(--baggrund);
+  background-image: url(/svg_webp/art_bb.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
 }
+
 .figma_icon {
   padding-top: 2px;
   width: fit-content;
