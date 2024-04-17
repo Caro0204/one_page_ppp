@@ -50,7 +50,7 @@ document.addEventListener("mousemove", (e) => {
 
   // Check if the cursor is over a link
   const isOverLink = e.target.tagName.toLowerCase() === "a";
-  cursor.style.backgroundColor = isOverLink ? "#919c9d" : "#a6b1bb";
+  cursor.style.backgroundColor = isOverLink ? "#2c1d17" : "#a6b1bb";
 });
 
 ///////////////// ICONER /////////////////////
