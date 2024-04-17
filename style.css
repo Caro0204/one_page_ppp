@@ -49,6 +49,19 @@ p {
   .flyt {
     margin-left: 50px;
   }
+  .grid1_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+h1 {
+  font-family: var(--font);
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+  padding-bottom: 5px;
+  padding-top: 40px;
 }
 
 h3 {
@@ -56,7 +69,7 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  color: var(--black);
+  color: var(--baggrund);
   text-align: center;
   letter-spacing: 2px;
 }
@@ -89,6 +102,9 @@ a {
   color: var(--black);
   cursor: none;
 }
+.paddingmobil {
+  padding: 15px;
+}
 
 /*-------- Baggrundsbillede --------*/
 
@@ -108,18 +124,11 @@ a {
   }
 }
 
-.grid1_3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 /*---------Footer---------*/
-/* .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 75px;
-  padding: 50px;
-} */
+footer {
+  background-color: var(--lyseblå);
+  padding-top: 20px;
+}
 
 .mail_icon {
   width: fit-content;
@@ -130,6 +139,9 @@ a {
 .linkedin_icon {
   width: fit-content;
 }
+.linkedin_github {
+  width: fit-content;
+}
 .flex1_1 {
   display: flex;
   gap: 10px;
@@ -137,6 +149,10 @@ a {
 }
 .footer {
   padding: 25px;
+  p,
+  a {
+    color: var(--baggrund);
+  }
 }
 .padding {
   padding: 7px;
@@ -223,6 +239,9 @@ a {
     width: auto;
   }
   .linkedin_icon {
+    width: auto;
+  }
+  .linkedin_github {
     width: auto;
   }
 }
