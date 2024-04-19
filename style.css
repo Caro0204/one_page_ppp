@@ -105,6 +105,14 @@ a {
 .paddingmobil {
   padding: 15px;
 }
+button {
+  background: none;
+  border: none;
+  color: var(--mørkegrå);
+  cursor: none;
+  font-style: normal;
+  font-weight: 200;
+}
 
 /*-------- Baggrundsbillede --------*/
 
@@ -256,11 +264,12 @@ footer {
 }
 
 .accordion-header {
-  padding: 10px;
+  padding: 30px;
   background-color: var(--baggrund);
   color: var(--mørkegrå);
   border: 1px solid var(--mørkegrå);
   cursor: none;
+  text-align: start;
 }
 
 .accordion-content {
@@ -297,7 +306,6 @@ footer {
 }
 
 .accordion_text {
-  padding: 15px;
   letter-spacing: 5px;
   font-size: 1.8rem;
 }
@@ -334,13 +342,16 @@ footer {
     margin-right: 1rem;
   }
   .accordion_text {
-    transform-origin: left;
     top: 1rem;
-    rotate: 90deg;
-    width: max-content;
-    left: 55px;
     position: relative;
-    padding: 0;
+    display: inline-block;
+    writing-mode: vertical-rl;
+  }
+  .accordion-header {
+    padding: 43px;
+    /* text-align: start; */
+    display: grid;
+    place-items: start center;
   }
   .komp_img {
     width: 30%;
@@ -360,9 +371,7 @@ footer {
       max-width: 300px;
     }
   }
-  .accordion-header {
-    width: 115px;
-  }
+
   .accordion-header:hover,
   .accordion-item.active .accordion-header {
     border-left: 1px solid var(--baggrund);
@@ -381,7 +390,7 @@ footer {
     background-image: url(/svg_webp/art_bb.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0 0;
     object-fit: cover;
   }
 }
